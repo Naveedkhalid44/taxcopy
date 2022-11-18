@@ -1,0 +1,830 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Tax - Tax Service </title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Favicon -->
+      <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.jpg">
+      <!-- Google font (font-family: 'Josefin Sans', sans-serif;) -->
+      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
+      <!-- CSS
+         ============================================ -->
+      <!-- Icon Font CSS -->
+      <link rel="stylesheet" href="assets/css/plugins/pe-icon-7-stroke.css">
+      <link rel="stylesheet" href="assets/css/plugins/font-awesome.min.css">
+      <link rel="stylesheet" href="assets/css/plugins/flaticon.css">
+      <!-- Plugins CSS -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/plugins/animate.min.css">
+      <link rel="stylesheet" href="assets/css/plugins/fakeloader.css">
+      <link rel="stylesheet" href="assets/css/plugins/meanmenu.css">
+      <link rel="stylesheet" href="assets/css/plugins/slick.min.css">
+      <link rel="stylesheet" href="assets/css/plugins/animated-headline.css">
+      <link rel="stylesheet" href="assets/css/plugins/youtubepopup.min.css">
+      <link rel="stylesheet" href="assets/css/plugins/calender.css">
+      <link rel="stylesheet" href="assets/css/plugins/plyr.min.css">
+      <link rel="stylesheet" href="assets/css/plugins/select2.min.css">
+      <link rel="stylesheet" href="assets/css/plugins/datepicker.min.css">
+      <!-- Main Style CSS -->
+      <link rel="stylesheet" href="assets/css/style.css">
+      <style>
+         @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
+         body {
+         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+         color: #262626;
+         font-weight: 400;
+         }
+         a:visited {
+         color: white;
+         }
+         .tooltip {
+         position: relative;
+         display: inline-block;
+         border-bottom: 1px dotted black;
+         }
+         .tooltip .tooltiptext {
+         visibility: hidden;
+         width: 120px;
+         background-color: black;
+         color: #fff;
+         text-align: center;
+         border-radius: 6px;
+         padding: 5px 0;
+         /* Position the tooltip */
+         position: absolute;
+         z-index: 1;
+         }
+         .tooltip:hover .tooltiptext {
+         visibility: visible;
+         }
+         .select2-container {
+         width: 70%;
+         }
+         h6 {
+         font-weight: 400 !important;
+         }
+         .d-flex {
+         display: flex;
+         flex-direction: row;
+         background: #f6f6f6;
+         border-radius: 0 0 5px 5px;
+         padding: 25px;
+         }
+         form {
+         flex: 4;
+         }
+         .Yorder {
+         flex: 2;
+         }
+         @media only screen and (max-width: 980px) and (min-width:350px) {
+         .new {
+         width: 100% !important;
+         height: 45px !important;
+         padding: 5px 10px;
+         margin-bottom: 10px;
+         border: 1px solid #dadada;
+         color: #888;
+         }
+         h6 {
+         width: auto;
+         }
+         .new2 {
+         margin-left: 9pc !important;
+         width: 100%;
+         }
+         .new3 {
+         margin-left: 40px !important;
+         margin-top: -54px !important;
+         width: 73% !important;
+         }
+         .new4 {
+         text-align: -webkit-right;
+         }
+         .selection {
+         width: 281px !important;
+         }
+         .cartbtn {
+         margin-left: 15px !important;
+         width: 72% !important;
+         margin-top: 9px !important;
+         }
+         .cartinput {
+         margin-right: -44px;
+         }
+         .image {
+         display: inline-flex;
+         }
+         }
+         @media only screen and (max-width: 380px) {
+         .new1 {
+         width: 53% !important;
+         height: 45px !important;
+         padding: 5px 10px;
+         margin-bottom: 10px;
+         border: 1px solid #dadada;
+         color: #888;
+         }
+         }
+         .title {
+         background: -webkit-gradient(linear, left top, right bottom, color-stop(0, #00AC1F), color-stop(100, #00AC1F));
+         background: -moz-linear-gradient(top left, #00AC1F 0%, #00AC1F 100%);
+         background: -ms-linear-gradient(top left, #00AC1F 0%, #00AC1F 100%);
+         background: -o-linear-gradient(top left, #00AC1F 0%, #00AC1F 100%);
+         background: linear-gradient(to bottom right, #00AC1F 0%, #00AC1F 100%);
+         border-radius: 5px 5px 0 0;
+         padding: 20px;
+         color: #f6f6f6;
+         }
+         h2 {
+         margin: 0;
+         padding-left: 15px;
+         }
+         .required {
+         color: red;
+         }
+         label,
+         table {
+         display: block;
+         margin: 15px;
+         }
+         label>span {
+         margin-top: 12px;
+         padding-right: 10px;
+         }
+         input[type="text"],
+         input[type="tel"],
+         input[type="number"],
+         input[type="email"],
+         select {
+         width: 100%;
+         height: 45px;
+         padding: 5px 10px;
+         margin-bottom: 10px;
+         border: 1px solid black;
+         color: black;
+         }
+         select {
+         /* width: 72%; */
+         height: 45px;
+         padding: 5px 10px;
+         margin-bottom: 10px;
+         border: 1px solid black;
+         color: black;
+         }
+         .select2-hidden-accessible {
+         border: 1px solid black !important;
+         color: black !important;
+         }
+         .Yorder {
+         margin-top: 15px;
+         height: 600px;
+         padding: 20px;
+         border: 1px solid black;
+         }
+         table {
+         margin: 0;
+         padding: 0;
+         }
+         th {
+         border-bottom: 1px solid #dadada;
+         padding: 10px 0;
+         }
+         tr>td:nth-child(1) {
+         text-align: left;
+         color: #2d2d2a;
+         }
+         tr>td:nth-child(2) {
+         text-align: right;
+         color: #52ad9c;
+         }
+         td {
+         border-bottom: 1px solid #dadada;
+         padding: 25px 25px 25px 0;
+         }
+         p {
+         display: block;
+         color: #888;
+         margin: 0;
+         padding-left: 25px;
+         }
+         .Yorder>div {
+         padding: 15px 0;
+         }
+      </style>
+   </head>
+   <body>
+      <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+      <!-- Add your site or application content here -->
+      <div class="fakeloader"></div>
+      <!-- Main wrapper -->
+      <div class="wrapper" id="wrapper">
+         <header id="header" class="header sticky--header">
+            <!-- Header Top Area -->
+            <div class="header__top bg--blue d-none d-lg-block">
+               <div class="container">
+                  <div class="header__top__inner">
+                     <ul class="header__top__info">
+                        <li> <a href="#"><i class="flaticon-old-typical-phone"></i> 01354 568 787</a> </li>
+                        <li> <a href="#"><i class="flaticon-black-back-closed-envelope-shape"></i> info@abcc.com</a> </li>
+                     </ul>
+                     <div class="header__top__button">
+                        <a class="cr-btn cr-btn--lg" href="payment-plan.html"> <span>IRS Payment Plan Application</span> </a>
+                        <a class="cr-btn cr-btn--lg" href="login.html"> <span>Login</span> </a>
+                        <a class="cr-btn cr-btn--lg" href="97admin/admin/index.html"> <span>Admin</span> </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--// Header Top Area -->
+            <!-- Header Bottom Area -->
+            <div class="header__bottom bg--white">
+               <div class="container">
+                  <div class="header__bottom__inner">
+                     <div class="header__logo">
+                        <a href="index.html"> <img src="https://dukanlay.com/Content/Logo/Dukanlay.jpg" alt="header logo"> </a>
+                     </div>
+                     <!-- Main Navigation -->
+                     <nav id="main-navigation" class="header__menu main-navigation d-none d-lg-flex">
+                        <ul>
+                           <li> <a href="index.html">HOME</a> </li>
+                           <li><a href="about-us.html">ABOUT</a></li>
+                           <!-- <li><a href="features.html">FEATURES</a></li> -->
+                           <li> <a href="#">SERVICE</a>
+                              <ul class="sub-menu">
+                                 <li><a href="payment-plan.html" style="text-align: center;">IRS Payment Plan Application </a></li>
+                                 <li><a href="payment-plan.html" style="text-align: center;">State Payment Plan  </a></li>
+                                 <li><a href="payment-plan.html" style="text-align: center;">Tax Lien Removal</a></li>
+                              </ul>
+                           </li>
+                           <li> <a href="faqs.html">FAQS </a> </li>
+                           <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                     </nav>
+                     <!--// Main Navigation -->
+                     <button class="header__toggle d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"> <span></span> <span></span> <span></span> </button>
+                  </div>
+               </div>
+            </div>
+            <!--// Header Bottom Area -->
+         </header>
+         <!-- Breadcrumb Area -->
+         <div id="cr-breadcrumb-area" class="cr-breadcrumb-area section-padding--md">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-5 col-lg-6 col-md-8">
+                     <div class="cr-breadcrumb">
+                        <ul class="cr-breadcrumb__pagination">
+                           <li> <a href="index.html">Home</a> </li>
+                           <li>payment plan </li>
+                        </ul>
+                        <h1>payment plan  </h1>
+                        <p>perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--// Breadcrumb Area -->
+         <!-- Offcanvas -->
+         <div class="offcanvas offcanvas-start" tabindex="2" id="offcanvasMenu">
+            <div class="offcanvas-header">
+               <div class="offcanvas__logo">
+                  <a href="index.html"> <img src="https://dukanlay.com/Content/Logo/Dukanlay.jpg" alt="header logo"> </a>
+               </div>
+               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+               <ul class="offcanvas__info">
+                  <li> <a href="#"><i class="flaticon-old-typical-phone"></i> 01354 568 787</a> </li>
+                  <li> <a href="#"><i class="flaticon-black-back-closed-envelope-shape"></i> info@abcc.com</a> </li>
+               </ul>
+               <!-- Main Navigation -->
+               <nav class="canvas-menu">
+                  <ul>
+                     <li> <a href="index.html">HOME</a> </li>
+                     <li><a href="about-us.html">ABOUT</a></li>
+                     <li>
+                        <a href="#">SERVICE</a>
+                        <ul class="sub-menu">
+                           <li><a href="payment-plan.html">IRS Payment Plan Application </a></li>
+                           <li><a href="payment-plan.html">State Payment Plan </a></li>
+                           <li><a href="payment-plan.html">Tax Lien Removal</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="faqs.html">FAQS</a></li>
+                     <li><a href="contact.html">CONTACT</a></li>
+                  </ul>
+               </nav>
+               <!--// Main Navigation -->
+               <div class="offcanvas__button">
+                  <a class="cr-btn cr-btn--lg" href="payment-plan.html"> <span>IRS Payment Plan Application </span> </a>
+               </div>
+            </div>
+         </div>
+         <!-- //Offcanvas -->
+         <!-- Page Conent -->
+         <br>
+         <br>
+         <br>
+         <main class="page-content">
+            <div class="container">
+               <div class="row">
+                  <div class="title">
+                     <h2 class="text-center">Payment Plan With The IRS</h2>
+                  </div>
+                  <div class="d-flex">
+                     <form action="" method="">
+                        <div class="row">
+                           <h3 class="text-center">Billing <Span style="color: #00AC1F;"> Details </Span></h3>
+                           <div class="col-md-6">
+                              <label> <span class="fname">First Name </span> </label>
+                              <input type="text" class="new form-control " name="fname" placeholder="First Name"> 
+                           </div>
+                           <div class="col-md-6">
+                              <label> <span class="lname">Last Name </span> </label>
+                              <input type="text" class="new form-control " placeholder="Last Name" name="lname"> 
+                           </div>
+                           <div class="col-md-6">
+                              <label> <span class="lname">Email </span> </label>
+                              <input type="email" name="lname" class="new form-control " placeholder="new@gmail.com"> 
+                           </div>
+                           <div class="col-md-6">
+                              <label> <span class="fname">Phone No:</span> </label>
+                              <input type="number" name="fname" class=" form-control new" placeholder="0120 33030 33"> 
+                           </div>
+                        </div>
+                        <br>
+                        <h6 class="text-center ">Your application will go to the mailing address below with tracking. The
+                           IRS requires your physical signature.
+                        </h6>
+                        <br>
+                        <hr>
+                        <div class="row">
+                           <h3 class="text-center">Mailing <Span style="color: #00AC1F;">Address</Span></h3>
+                           <div class="col-md-11">
+                              <div class="form-group form-check" style="margin-left: 1pc;
+                                 /* margin-top: 10px !important; */
+                                 margin-bottom: -23px;">
+                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                 <label class="form-check-label" for="exampleCheck1">Mail to a PO BOX </label>
+                              </div>
+                           </div>
+                           <div class="col-md-1"></div>
+                           <div class="col-md-4">
+                              <label> <span class="fname">Address
+                              </span> </label>
+                              <input type="text" class=" form-control new" name="fname" placeholder="Address"> 
+                           </div>
+                           <div class="col-md-4">
+                              <label> <span class="lname">Apt/Unit # </span> </label>
+                              <input type="text" class=" form-control  new" placeholder="Apt /Unit" name="lname"> 
+                           </div>
+                           <div class="col-md-4">
+                              <label> <span class="lname">City </span> </label>
+                              <input type="text" class=" form-control  new" name="lname" placeholder="City"> 
+                           </div>
+                           <div class="row" style="margin-top: 4pc;">
+                              <div class="col-md-6">
+                                 <label> <span class="fname">State:</span> </label>
+                                 <select name="selection" class="selection  ">
+                                    <option value="select">Select a State...</option>
+                                    <option value="AFG">Afghanistan</option>
+                                    <option value="ALA">Åland Islands</option>
+                                    <option value="ALB">Albania</option>
+                                    <option value="GUY">Guyana</option>
+                                 </select>
+                              </div>
+                              <div class="col-md-6">
+                                 <label> <span class="lname">Zip Code</span> </label>
+                                 <input type="text" class="new form-control " name="lname" placeholder="Zip Code"> 
+                              </div>
+                              <div class="col-md-9" style="margin-top: -19px;margin-left: -9pc;">
+                                 <div class="form-group form-check new2" style="margin-left: 7pc;margin-left: 9pc;
+                                    /* margin-top: 10px !important; */
+                                    margin-bottom: -15px;">
+                                    <input type="checkbox" class="form-check-input form-control " id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1"> My billing address is the same as above </label>
+                                 </div>
+                              </div>
+                              <div class="col-md-3"></div>
+                              <div class="col-md-6">
+                                 <label> <span class="fname">Address Line 1
+                                 </span> </label>
+                                 <input type="text" class="new form-control " name="fname" placeholder="Address Line 1"> 
+                              </div>
+                              <div class="col-md-6">
+                                 <label> <span class="lname">Address Line 2 </span> </label>
+                                 <input type="text" class="new form-control " name="lname" placeholder="Address Line 2 "> 
+                              </div>
+                              <div class="col-md-6">
+                                 <label> <span class="fname">City
+                                 </span> </label>
+                                 <input type="text" class="new form-control " name="fname" placeholder="Address Line 2 "> 
+                              </div>
+                              <div class="col-md-6">
+                                 <label> <span class="fname">State:</span> </label>
+                                 <select name="selection" class="selection  ">
+                                    <option value="select">Select ...</option>
+                                    <option value="AFG">Afghanistan</option>
+                                    <option value="ALA">Åland Islands</option>
+                                    <option value="ALB">Albania</option>
+                                    <option value="GUY">Guyana</option>
+                                 </select>
+                              </div>
+                              <div class="col-md-6">
+                                 <label> <span class="fname">Zip Code 
+                                 </span> </label>
+                                 <input type="text" class="new form-control " name="fname" placeholder="Zip Code"> 
+                              </div>
+                              <div class="col-md-12">
+                                 <label> <span class="fname" class="new" style="width: auto !important;">Is this a new address since your last tax return?:</span>
+                                 <br> </label>
+                                 <br>
+                                 <select name="selection" class="selection form-control " style="width: 100% !important;">
+                                    <option value="select">Select ...</option>
+                                    <option value="AFG">Yes</option>
+                                    <option value="ALA">No </option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+                        <br>
+                        <h6 class="text-center">You may adjust your monthly payments below. The payments are calculated at the minimum to start.
+                        </h6>
+                        <br>
+                        <div style="text-align: -webkit-center;">
+                           <hr style="width: 100%;">
+                        </div>
+                        <div class="row">
+                           <h3 class="text-center">Payment<Span style="color: #00AC1F;"> Information</Span></h3>
+                           <div class="col-md-5">
+                              <label> <span class="fname">Total Debt Owed  
+                              </span> </label>
+                              <input type="text" class=" form-control  new" name="fname" placeholder=" Total Debt Owed   "> 
+                           </div>
+                           <div class="col-md-2">
+                              <label style="text-align-last: center;margin-left: 37px;"> <span class="fname">Your Payment  
+                              </span> </label>
+                              <label> <span class="fname" class="new  cartinput " style="font-size: 35px;font-weight:bold;color: green;">$ 
+                              </span> </label>
+                              <input type="text" name="fname" class="form-control new3" style="margin-left: 3pc;
+                                 margin-top: -32%;" width="10%" value="325"> 
+                           </div>
+                           <div class="col-md-4"></div>
+                           <div class="row">
+                              <div class="col-md-5"></div>
+                              <div class="col-md-3">
+                                 <div class="center">
+                                    <label style="text-align-last: center;margin-left: 37px;"> <span class="fname">over months 
+                                    </span> </label>
+                                    <div class="input-group" style="margin-right: 4px;"> <span class="input-group-btn">
+                                       <button type="button" style="margin-top: 10px;"  class="btn btn-danger btn-number"  data-type="minus" data-field="quant[2]">
+                                       <i class="fa fa-minus"></i>
+                                       </button>
+                                       </span>
+                                       <input type="number" style="    margin-left: 25px;
+                                          margin-top: 5px;
+                                          margin-right: 25px;" name="quant[2]" class="form-control input-number " value="10" min="1" max="100"> <span class="input-group-btn" style="margin-right: 4px;">
+                                       <button type="button"  style="
+                                          width:100%;margin-top: 8px;" class="btn btn-success btn-number cartbtn" data-type="plus" data-field="quant[2]">
+                                       <i class="fa fa-plus"></i>
+                                       </button>
+                                       </span> 
+                                    </div>
+                                    <p></p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-12">
+                              <label> <span class="fname" style="width: auto !important;">Is this amount owed from a business?</span> </label>
+                              <select name="selection" class="selection form-control " style="width: 100% !important;">
+                                 <option value="select">Select...</option>
+                                 <option value="AFG">Yes</option>
+                                 <option value="ALA">No </option>
+                              </select>
+                           </div>
+                           <div class="col-md-12">
+                              <label> <span class="fname" style="width: auto !important;">For convenience, would you like the IRS to process your monthly payment automatically through your paycheck?:</span>
+                              <br> </label>
+                              <select name="selection" class="selection form-control " style="width: 100% !important;">
+                                 <option value="select">Select </option>
+                                 <option value="AFG">Yes</option>
+                                 <option value="ALA">No </option>
+                              </select>
+                           </div>
+                        </div>
+                        <Br>
+                        <h6 class="text-center">Here are more details for your application:</h6>
+                        <Br>
+                        <br>
+                        <div style="text-align: -webkit-center;">
+                           <hr style="width: 100%;">
+                        </div>
+                        <div class="row">
+                           <h3 class="text-center">Application  <span style="color: #00AC1F;">Details </span>
+                           </h3>
+                           <div class="col-md-6">
+                              <label> <span class="fname"> Security Number 
+                              </span> </label>
+                              <input type="text" class="new form-control " placeholder="Security Number" name="fname"> 
+                           </div>
+                           <div class="col-md-6">
+                              <label> <span class="fname">Are you married?:</span> </label>
+                              <select name="selection" class="selection  ">
+                                 <option value="select">Select ...</option>
+                                 <option value="AFG">Yes</option>
+                                 <option value="ALA">No </option>
+                              </select>
+                           </div>
+                           <div class="col-md-6">
+                              <label> <span class="fname">Best Time to Call:</span> </label>
+                              <select name="selection" class="selection  ">
+                                 <option value="select">Select ...</option>
+                                 <option value="AFG">Morning</option>
+                                 <option value="ALA">Evening </option>
+                              </select>
+                           </div>
+                           <div class="col-md-6">
+                              <label> <span class="fname">Day of Month to Make Payments </span> </label>
+                              <select name="selection" class="selection  ">
+                                 <option value="select">Select ...</option>
+                                 <option value="AFG">2</option>
+                                 <option value="ALA">3</option>
+                                 <option value="ALB">4</option>
+                                 <option value="GUY">5</option>
+                              </select>
+                           </div>
+                           <div class="col-md-6">
+                              <label> <span class="fname">Processing Speed</span> </label>
+                              <select name="selection" class="selection  ">
+                                 <option value="select">Select ...</option>
+                                 <option value="AFG">standard</option>
+                                 <option value="ALA">deluxe</option>
+                              </select>
+                           </div>
+                        </div>
+                        <Br>
+                        <h6 class="text-center">97Tax will create your application within 24 hours and mail it to you using First Class mail. You should receive your application within 5-7 business days. No additional charge.
+                        </h6>
+                        <Br>
+                        <br>
+                        <div style="text-align: -webkit-center;">
+                           <hr style="width: 100%;">
+                        </div>
+                        <div class="row">
+                           <h3 class="text-center">Credit or <span style="color: #00AC1F;"> Debit Card </span> </h3>
+                           <div class="col-md-3">
+                              <label> <span class="fname" style="font-size: 13px; line-height:1">Partner Code 
+                              </span> </label>
+                              <input type="text" class="new form-control " name="fname"> 
+                           </div>
+                           <div class="col-md-7"> </div>
+                           <div class="col-md-2"> <img src="assets/images/mastercard.png"> <img src="assets/images/download.png"> </div>
+                           <div class="col-md-1"></div>
+                           <div class="col-md-1 image" style="margin-top: 3pc;"> <img src="assets/images/aut.gif">
+                              <br> <img src="assets/images/ver.gif">
+                              <br>
+                              <br> <img src="assets/images/mas.gif"> 
+                           </div>
+                           <div class="col-md-3">
+                              <label> <span class="fname" class="new" style=" line-height:1">Card Number
+                              </span> </label>
+                              <input type="number" class="new form-control " name="fname" placeholder="121-323232-3232"> 
+                           </div>
+                           <div class="col-md-3">
+                              <label> <span class="fname" style=" line-height:1">Card Expiration
+                              </span> </label>
+                              <input type="number" class="new form-control " name="fname" placeholder="23-03-30"> 
+                           </div>
+                           <div class="col-md-2">
+                              <label> <span class="fname">
+                              </span> </label>
+                              <input type="text" class="new form-control " name="fname" placeholder="*** ***"> 
+                           </div>
+                           <div class="col-md-2">
+                              <label> <span class="fname" style="line-height:1">Card Code
+                              </span> </label>
+                              <input type="text" class="new form-control " name="fname" placeholder="*** ***"> 
+                           </div>
+                           <div class="col-md-3"></div>
+                           <div class="col-md-8">
+                              <h6>One-Time Enrollment Fee 
+                              </h6>
+                           </div>
+                           <div class="col-md-1">
+                              <h6 class="new4">$97
+                              </h6>
+                           </div>
+                           <div class="col-md-3"></div>
+                           <div class="col-md-8">
+                              <h6>Subtotal
+                              </h6>
+                           </div>
+                           <div class="col-md-1">
+                              <h6 class="new4">$97
+                              </h6>
+                           </div>
+                           <div class="col-md-3"></div>
+                           <div class="col-md-8">
+                              <h6>Total
+                              </h6>
+                           </div>
+                           <div class="col-md-1">
+                              <h6 class="new4">$97
+                              </h6>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-12"> <a href="thank-you.html" <button type="button" class="btn btn-success" style="width: 100%;">Procced To Payment</button></a> </div>
+                        </div>
+                        <Br> 
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </main>
+         <!-- //Page Conent -->
+         <!-- Footer Area -->
+         <footer id="footer" class="footer-area fixed--footer">
+            <!-- Footer Widgets Area -->
+            <div class="footer-area__widgets section-padding--md bg--dark--light">
+               <div class="container">
+                  <div class="footer-area__logo text-center">
+                     <a href="index.html"> <img src="https://dukanlay.com/Content/Logo/Dukanlay.jpg" alt="footer logo"> </a>
+                  </div>
+                  <div class="widget-area footer--widgets">
+                     <!-- Single Widget -->
+                     <section class="widget widget-about">
+                        <h5 class="widget-title">ABOUT Tax</h5>
+                        <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium oloremque laudantium, totam rem onsectetur sires to obtain pain of itself because </p>
+                        <div class="social-icons social-icons--rounded">
+                           <ul>
+                              <li class="facebook">
+                                 <a href="https://www.facebook.com/"> <i class="fa fa-facebook"></i> </a>
+                              </li>
+                              <li class="twitter">
+                                 <a href="https://twitter.com/"> <i class="fa fa-twitter"></i> </a>
+                              </li>
+                              <li class="instagram">
+                                 <a href="https://www.instagram.com/"> <i class="fa fa-instagram"></i> </a>
+                              </li>
+                              <li class="google-plus">
+                                 <a href="https://plus.google.com/discover"> <i class="fa fa-google-plus"></i> </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </section>
+                     <!--// Single Widget -->
+                     <!-- Single Widget -->
+                     <section class="widget widget-quick-links">
+                        <h5 class="widget-title">QUICK LINKS</h5>
+                        <ul>
+                           <li> <a href="payment-plan.html"> Services</a> </li>
+                           <li> <a href="about-us.html">About Us</a> </li>
+                           <li> <a href="#">Help Centre</a> </li>
+                           <li> <a href="contact.html">Contact Us</a> </li>
+                        </ul>
+                     </section>
+                     <!--// Single Widget -->
+                     <!-- Single Widget -->
+                     <section class="widget widget-twitter-feed">
+                        <h5 class="widget-title">Twitter Feed</h5>
+                        <ul>
+                           <li>
+                              <p> <a href="#">@Alex Smith</a>, unde omnis te us error sit voluptatem </p>
+                              <span class="time">
+                              <a href="#">10 Mins ago</a>
+                              </span> 
+                           </li>
+                           <li>
+                              <p> <a href="#">@Justin Bieber</a>, unde omnis te us error sit voluptatem </p>
+                              <span class="time">
+                              <a href="#">12 Mins ago</a>
+                              </span> 
+                           </li>
+                        </ul>
+                     </section>
+                     <!--// Single Widget -->
+                     <!-- Single Widget -->
+                     <section class="widget widget-contact-info">
+                        <h5 class="widget-title">Contact Info</h5>
+                        <ul>
+                           <li>
+                              <p>256 Notrh Tower, Western City Mid Town, Las Vagas, USA</p>
+                           </li>
+                           <li>
+                              <p> <a href="callto://+00812568987789">+008 12568 987 789</a> </p>
+                              <p> <a href="callto://+00835687567458">+008 35687 567 458</a> </p>
+                           </li>
+                           <li>
+                              <p> <a href="#">info@abcc.com</a> </p>
+                              <p> <a href="#">www.dukanlay.com/</a> </p>
+                           </li>
+                        </ul>
+                     </section>
+                     <!--// Single Widget -->
+                  </div>
+               </div>
+            </div>
+            <!--// Footer Widgets Area -->
+            <!-- Footer Copyright Area -->
+            <div class="footer-area__copyright bg--dark">
+               <div class="container">
+                  <div class="copyright text-center">
+                     <p>&copy; 2022 <span> Tax </span> Made with <i class="fa fa-heart"></i> by <a href="https://dukanlay.com/">Dukanlay</a></p>
+                  </div>
+               </div>
+            </div>
+            <!--// Footer Copyright Area -->
+         </footer>
+         <!-- //Footer Area -->
+      </div>
+      <!-- //Main wrapper -->
+      <!-- Back To Top Start -->
+      <button id="backBTn" class="backbtn"><i class="fa fa-angle-up"></i></button>
+      <!-- //Back To Top end -->
+      <!-- JS
+         ============================================ -->
+      <!-- Modernizer & jQuery JS -->
+      <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+      <script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
+      <!-- Bootstrap JS -->
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <!-- Plugins JS -->
+      <script src="assets/js/plugins.js"></script>
+      <script src="assets/js/ajax-mail.js"></script>
+      <script src="assets/js/active.js"></script>
+      <!-- Main JS -->
+      <script src="assets/js/scripts.js"></script>
+      <script>
+         $('.btn-number').click(function(e) {
+         	e.preventDefault();
+         	fieldName = $(this).attr('data-field');
+         	type = $(this).attr('data-type');
+         	var input = $("input[name='" + fieldName + "']");
+         	var currentVal = parseInt(input.val());
+         	if(!isNaN(currentVal)) {
+         		if(type == 'minus') {
+         			if(currentVal > input.attr('min')) {
+         				input.val(currentVal - 1).change();
+         			}
+         			if(parseInt(input.val()) == input.attr('min')) {
+         				$(this).attr('disabled', true);
+         			}
+         		} else if(type == 'plus') {
+         			if(currentVal < input.attr('max')) {
+         				input.val(currentVal + 1).change();
+         			}
+         			if(parseInt(input.val()) == input.attr('max')) {
+         				$(this).attr('disabled', true);
+         			}
+         		}
+         	} else {
+         		input.val(0);
+         	}
+         });
+         $('.input-number').focusin(function() {
+         	$(this).data('oldValue', $(this).val());
+         });
+         $('.input-number').change(function() {
+         	minValue = parseInt($(this).attr('min'));
+         	maxValue = parseInt($(this).attr('max'));
+         	valueCurrent = parseInt($(this).val());
+         	name = $(this).attr('name');
+         	if(valueCurrent >= minValue) {
+         		$(".btn-number[data-type='minus'][data-field='" + name + "']").removeAttr('disabled')
+         	} else {
+         		alert('Sorry, the minimum value was reached');
+         		$(this).val($(this).data('oldValue'));
+         	}
+         	if(valueCurrent <= maxValue) {
+         		$(".btn-number[data-type='plus'][data-field='" + name + "']").removeAttr('disabled')
+         	} else {
+         		alert('Sorry, the maximum value was reached');
+         		$(this).val($(this).data('oldValue'));
+         	}
+         });
+         $(".input-number").keydown(function(e) {
+         	// Allow: backspace, delete, tab, escape, enter and .
+         	if($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+         		// Allow: Ctrl+A
+         		(e.keyCode == 65 && e.ctrlKey === true) ||
+         		// Allow: home, end, left, right
+         		(e.keyCode >= 35 && e.keyCode <= 39)) {
+         		// let it happen, don't do anything
+         		return;
+         	}
+         	// Ensure that it is a number and stop the keypress
+         	if((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+         		e.preventDefault();
+         	}
+         });
+      </script>
+   </body>
+</html>

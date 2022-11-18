@@ -1,0 +1,1410 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title> Tax </title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Favicon -->
+      <link rel="shortcut icon" type="image/x-icon" href="https://dukanlay.com/Content/Logo/Dukanlay.jpg">
+      <!-- Google font (font-family: 'Josefin Sans', sans-serif;) -->
+      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
+      <!-- CSS
+         ============================================ -->
+      <!-- Icon Font CSS -->
+      <link rel="stylesheet" href="assets/css/plugins/pe-icon-7-stroke.css">
+      <link rel="stylesheet" href="assets/css/plugins/font-awesome.min.css">
+      <link rel="stylesheet" href="assets/css/plugins/flaticon.css">
+      <!-- Plugins CSS -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/plugins/animate.min.css">
+      <link rel="stylesheet" href="assets/css/plugins/fakeloader.css">
+      <link rel="stylesheet" href="assets/css/plugins/meanmenu.css">
+      <link rel="stylesheet" href="assets/css/plugins/slick.min.css">
+      <link rel="stylesheet" href="assets/css/plugins/animated-headline.css">
+      <link rel="stylesheet" href="assets/css/plugins/youtubepopup.min.css">
+      <link rel="stylesheet" href="assets/css/plugins/calender.css">
+      <link rel="stylesheet" href="assets/css/plugins/plyr.min.css">
+      <link rel="stylesheet" href="assets/css/plugins/select2.min.css">
+      <link rel="stylesheet" href="assets/css/plugins/datepicker.min.css">
+      <link rel="stylesheet" href="assets/css/plugins/ol.scss">
+      <!-- Main Style CSS -->
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+   </head>
+   <style>
+      #regForm {
+      background-color: #ffffff;
+      margin: 100px auto;
+      font-family: Raleway;
+      padding: 40px;
+      width: 90%;
+      min-width: 300px;
+      }
+      h1 {
+      text-align: center;
+      }
+      input {
+      padding: 10px;
+      width: 100%;
+      font-size: 17px;
+      font-family: Raleway;
+      border: 1px solid #aaaaaa;
+      }
+      /* Mark input boxes that gets an error on validation: */
+      input.invalid {
+      background-color: #ffdddd;
+      }
+      /* Hide all steps by default: */
+      .tab {
+      display: none;
+      }
+      button {
+      background-color: #04AA6D;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 17px;
+      font-family: Raleway;
+      cursor: pointer;
+      }
+      button:hover {
+      opacity: 0.8;
+      }
+      #prevBtn {
+      background-color: #bbbbbb;
+      }
+      /* Make circles that indicate the steps of the form: */
+      .step {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbbbbb;
+      border: none;
+      border-radius: 50%;
+      display: inline-block;
+      opacity: 0.5;
+      }
+      .step.active {
+      opacity: 1;
+      }
+      /* Mark the steps that are finished and valid: */
+      .step.finish {
+      background-color: #04AA6D;
+      }
+      .progress {
+      background: linear-gradient(to right, #00AC1F 0%, #00AC1F 40%, #fff 40%, #fff 100%);
+      border: solid 2px #00AC1F;
+      border-radius: 8px;
+      height: 7px;
+      width: 400px;
+      outline: none;
+      transition: background 450ms ease-in;
+      -webkit-appearance: none;
+      }
+      .progress::-webkit-slider-thumb {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      -webkit-appearance: none;
+      cursor: ew-resize;
+      background: #434343;
+      }
+      ol.alternating-colors li:nth-child(odd):before {
+      border-color: #0BAD02;
+      }
+      li {
+      color: #4F4F4F;
+      padding-left: 16px;
+      margin-top: 24px;
+      position: relative;
+      font-size: 16px;
+      line-height: 20px;
+      }
+      ol {
+      padding-left: 50px;
+      }
+   </style>
+   <body>
+      <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+      <!-- Add your site or application content here -->
+      <div class="fakeloader"></div>
+      <!-- Main wrapper -->
+      <div class="wrapper" id="wrapper">
+         <!-- Header -->
+         <header id="header" class="header sticky--header">
+            <!-- Header Top Area -->
+            <div class="header__top bg--blue d-none d-lg-block">
+               <div class="container">
+                  <div class="header__top__inner">
+                     <ul class="header__top__info">
+                        <li> <a href="#"><i class="flaticon-old-typical-phone"></i> 01354 568 787</a> </li>
+                        <li> <a href="#"><i class="flaticon-black-back-closed-envelope-shape"></i> info@abcc.com</a>
+                        </li>
+                     </ul>
+                     <div class="header__top__button">
+                        <a class="cr-btn cr-btn--lg" href="payment-plan.html"> <span>IRS Payment Plan
+                        Application</span> </a>
+                        <a class="cr-btn cr-btn--lg" href="login.html"> <span>Login</span> </a>
+                        <a class="cr-btn cr-btn--lg" href="97admin/admin/index.html"> <span>Admin</span> </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--// Header Top Area -->
+            <!-- Header Bottom Area -->
+            <div class="header__bottom bg--white">
+               <div class="container">
+                  <div class="header__bottom__inner">
+                     <div class="header__logo">
+                        <a href="index.html"> <img src="https://dukanlay.com/Content/Logo/Dukanlay.jpg"
+                           alt="header logo"> </a>
+                     </div>
+                     <!-- Main Navigation -->
+                     <nav id="main-navigation" class="header__menu main-navigation d-none d-lg-flex">
+                        <ul>
+                           <li> <a href="index.html">HOME</a> </li>
+                           <li><a href="about-us.html">ABOUT</a></li>
+                           <!-- <li><a href="features.html">FEATURES</a></li> -->
+                           <li>
+                              <a href="#">SERVICE</a>
+                              <ul class="sub-menu">
+                                 <li><a href="payment-plan.html" style="text-align: center;">IRS Payment Plan
+                                    Application </a>
+                                 </li>
+                                 <li><a href="payment-plan.html" style="text-align: center;">State Payment Plan
+                                    </a>
+                                 </li>
+                                 <li><a href="payment-plan.html" style="text-align: center;">Tax Lien Removal</a>
+                                 </li>
+                              </ul>
+                           </li>
+                           <li> <a href="faqs.html">FAQS </a> </li>
+                           <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                     </nav>
+                     <!--// Main Navigation -->
+                     <button class="header__toggle d-lg-none" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasMenu"> <span></span> <span></span> <span></span> </button>
+                  </div>
+               </div>
+            </div>
+            <!--// Header Bottom Area -->
+         </header>
+         <!-- //Header -->
+         <!-- Top Banner -->
+         <div class="banner-area">
+            <div class="banner banner-slider-active banner--animated-content">
+               <!-- Single Banner -->
+               <div class="banner__single bg-image--1" data-black-overlay="6">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-xl-7 col-lg-8">
+                           <div class="banner__single__content">
+                              <h1>WORRIED
+                                 <span class="color--theme">ABOUT TAX?</span> WE ARE EXPERT IN
+                                 <span class="color--theme">TAX</span> SOLUTIONS
+                              </h1>
+                              <a href="payment-plan.html" class="cr-btn"> <span>State Payment Application</span>
+                              </a>
+                              <a href="payment-plan.html" class="cr-btn"> <span>Tax Lien Removal</span> </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- //Single Banner -->
+               <!-- Single Banner -->
+               <div class="banner__single bg-image--2" data-black-overlay="6">
+                  <div class="container">
+                     <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                           <div class="banner__single__content text-center">
+                              <h1>WORRIED
+                                 <span class="color--theme">ABOUT TAX?</span> WE ARE EXPERT IN
+                                 <span class="color--theme">TAX</span> SOLUTIONS
+                              </h1>
+                              <a href="payment-plan.html" class="cr-btn"> <span>State Payment Application</span>
+                              </a>
+                              <a href="payment-plan.html" class="cr-btn"> <span>Tax Lien Removal</span> </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- //Single Banner -->
+               <!-- Single Banner -->
+               <div class="banner__single bg-image--3" data-black-overlay="6">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-xl-7 col-lg-8">
+                           <div class="banner__single__content">
+                              <h1>WORRIED
+                                 <span class="color--theme">ABOUT TAX?</span> WE ARE EXPERT IN
+                                 <span class="color--theme">TAX</span> SOLUTIONS
+                              </h1>
+                              <a href="payment-plan.html" class="cr-btn"> <span>State Payment Application</span>
+                              </a>
+                              <a href="payment-plan.html" class="cr-btn"> <span>Tax Lien Removal</span> </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- //Single Banner -->
+            </div>
+         </div>
+         <!-- //Top Banner -->
+         <!-- Offcanvas -->
+         <div class="offcanvas offcanvas-start" tabindex="2" id="offcanvasMenu">
+            <div class="offcanvas-header">
+               <div class="offcanvas__logo">
+                  <a href="index.html"> <img src="https://dukanlay.com/Content/Logo/Dukanlay.jpg" alt="header logo">
+                  </a>
+               </div>
+               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+               <ul class="offcanvas__info">
+                  <li> <a href="#"><i class="flaticon-old-typical-phone"></i> 01354 568 787</a> </li>
+                  <li> <a href="#"><i class="flaticon-black-back-closed-envelope-shape"></i> info@abcc.com</a> </li>
+               </ul>
+               <!-- Main Navigation -->
+               <nav class="canvas-menu">
+                  <ul>
+                     <li> <a href="index.html">HOME</a> </li>
+                     <li><a href="about-us.html">ABOUT</a></li>
+                     <li>
+                        <a href="#">SERVICE</a>
+                        <ul class="sub-menu">
+                           <li><a href="payment-plan.html">IRS Payment Plan Application </a></li>
+                           <li><a href="payment-plan.html">State Payment Plan </a></li>
+                           <li><a href="payment-plan.html">Tax Lien Removal</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="faqs.html">FAQS</a></li>
+                     <li><a href="contact.html">CONTACT</a></li>
+                  </ul>
+               </nav>
+               <!--// Main Navigation -->
+               <div class="offcanvas__button">
+                  <a class="cr-btn cr-btn--lg" href="payment-plan.html"> <span>IRS Payment Plan Application </span>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <!-- //Offcanvas -->
+         <!-- Page Conent -->
+         <main class="page-content">
+            <!-- About Area -->
+            <section id="about-area" class="cr-section about-area bg--white">
+               <div class="container">
+                  <div class="about-area__inside">
+                     <div class="row">
+                        <div class="col-lg-5">
+                           <div class="about-area__image"> <img class="wow slideInLeft" data-wow-delay="0"
+                              src="assets/images/about/aout.jpg" alt="about area thumb"> </div>
+                        </div>
+                        <div class="col-lg-7">
+                           <div class="about-area__content">
+                              <h4>WE ARE “
+                                 <span class="color--theme">Tax</span>”
+                              </h4>
+                              <h3 class="cd-headline cx-heading slide">PROVIDE BEST TAX SOLUTION FOR YOUR
+                                 <span class="color--theme cd-words-wrapper cd-words-wrapper-2">
+                                 <b class="is-visible">Business</b>
+                                 <b>Performance</b>
+                                 <b>Success</b>
+                                 </span>
+                                 TO GROWUP
+                              </h3>
+                              <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                 laudantium, totam rem aperiam, eaque ipsa quae 
+                              </p>
+                              <p>Parchitect beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                                 voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                                 eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+                              </p>
+                              <a href="about-us.html" class="cr-btn"> <span>Read More</span> </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!-- //About Area -->
+            <!-- Tax Calculation Area -->
+            <section id="tax-calculation" class="tax-calculation-area bg--grey--light " style="margin-top:10pc;">
+               <div class="taxcalc">
+                  <div class="row no-gutters align-items-center">
+                     <!-- Tax Calculation Area Left -->
+                     <div class="col-xl-5">
+                        <div class="taxcalc__content" data-black-overlay="4">
+                           <div class="taxcalc__content__inner">
+                              <h3>TAX
+                                 <span class="color--theme">CALCULATION</span>
+                              </h3>
+                              <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                 laudanti, totam rem aperiam, eaque ipsa quae so some thing new for tax
+                                 calculation 
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <!--// Tax Calculation Area Left -->
+                     <!-- Tax Calculation Area Right -->
+                     <div class="col-xl-7">
+                        <div class="taxcalc__calculation">
+                           <div class="taxcalc__calculation__inner">
+                              <div class="row no-gutters">
+                                 <form id="regForm" action="/action_page.php">
+                                    <h1>Payment Plan:</h1>
+                                    <!-- One "tab" for each step in the form: -->
+                                    <div class="tab">
+                                       How much do you owe:?
+                                       <br>
+                                       <div class="row">
+                                          <div class="col-md-12">
+                                             <p><input placeholder="$5445" oninput="this.className = ''"
+                                                name="fname"></p>
+                                          </div>
+                                          <!-- <div class="col-md-6">
+                                             <p><input placeholder="Last name..." oninput="this.className = ''" name="lname" ></p>
+                                             </div> -->
+                                       </div>
+                                    </div>
+                                    <div class="tab">
+                                       Email
+                                       <div class="row">
+                                          <div class="col-md-12">
+                                             <p><input placeholder="E-mail..." oninput="this.className = ''"
+                                                name="email"></p>
+                                             <small>Please Contact us on hello@example.com if you have any
+                                             question about my service</small>
+                                             <Br>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="tab">
+                                       <div class="row">
+                                          <div class="col-md-12">
+                                             <small>Congratulations! You tax debt qualifies you for a monthly
+                                             payment plan:</small>
+                                             <br>
+                                             <p>
+                                                <!-- <input type="range" min="1" max="100" value="50" oninput="this.className = ''" name="dd"> -->
+                                                <input type="range" value="40" min="0" max="100" step="1"
+                                                   class="progress">
+                                                <small>if you pay down $562 per month your $6743 IRS Tax
+                                                debt will be fully repaid in 12 months</small>
+                                             </p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="tab">
+                                       <strong>it's easy as 1,2,3...</strong>
+                                       <ol class="alternating-colors">
+                                          <li>
+                                             <p>You Provide us with some basic information to get us started
+                                             </p>
+                                          </li>
+                                          <li>
+                                             <p>We'll draw up all the requireds paperwork and send it you</p>
+                                          </li>
+                                          <li>
+                                             <p>You just need to check sign in and mail off. Then
+                                                <Strong>Your r all set</Strong>
+                                             </p>
+                                          </li>
+                                          Your package will include a prepaid evelope with the correct  address
+                                          <br>
+                                          <Small> Because of our streamlined process,our fee of $86 is much lower than cost of a regular tax prepare</Small>
+                                       </ol>
+                                    </div>
+                                    <div class="tab">
+                                       First we need u contact information
+                                       <div class="row">
+                                          <div class="col-md-12">
+                                             <p><input placeholder="Username..."
+                                                oninput="this.className = ''" name="uname"></p>
+                                          </div>
+                                          <div class="col-md-3">
+                                             Middle INtial
+                                             <p><input placeholder="middle intial..."
+                                                oninput="this.className = ''" name="pword" type="name">
+                                             </p>
+                                          </div>
+                                          <div class="col-md-12">
+                                             Last Name
+                                             <p><input placeholder="last name..."
+                                                oninput="this.className = ''" name="pword" type="text">
+                                             </p>
+                                          </div>
+                                          <div class="col-md-12">
+                                             Email
+                                             <p><input placeholder="email..." oninput="this.className = ''"
+                                                name="pword" type="email"></p>
+                                          </div>
+                                          <div class="row">
+                                             <div class="col-md-6">
+                                                Phone Number
+                                                <p><input placeholder="Phone Number..."
+                                                   oninput="this.className = ''" name="pword"
+                                                   type="number"></p>
+                                             </div>
+                                             <div class="col-md-6">
+                                                Best time for call
+                                                <p>
+                                                   <select id="cars" name="cars">
+                                                      <option value="volvo">4.00 pm</option>
+                                                      <option value="saab">5.00 pm</option>
+                                                      <option value="fiat">6.00 pm</option>
+                                                      <option value="audi">7.00 pm</option>
+                                                   </select>
+                                                </p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+
+
+									<div class="tab">
+									<strong>	...AND your mailing address </strong>
+										<div class="row">
+											<div class="col-md-12">
+												Country region
+												<p>
+												   <select id="cars" name="cars">
+													  <option value="volvo">USA</option>
+													  <option value="saab">Pakistan</option>
+													  <option value="fiat">India</option>
+													 
+												   </select>
+												</p>
+											 </div>
+										   <div class="row">
+
+										  
+										   <div class="col-md-8">
+											  Address 
+											  <p><input placeholder="Street address or P.O Box ..."
+												 oninput="this.className = ''" name="pword" type="name">
+											  </p>
+										   </div>
+										   <div class="col-md-4">
+											  APT#
+											  <p><input placeholder="APT#..."
+												 oninput="this.className = ''" name="pword" type="text">
+											  </p>
+										   </div>
+										</div>
+										  
+										   <div class="row">
+											  <div class="col-md-4">
+												 city
+												 <p><input placeholder="city..."
+													oninput="this.className = ''" name="pword"
+													type="text"></p>
+											  </div>
+
+											  <div class="col-md-4">
+												State
+												<select id="cars" name="cars">
+													<option value="volvo">USA</option>
+													<option value="saab">Pakistan</option>
+													<option value="fiat">India</option>
+												   
+												 </select>
+											 </div>
+
+											 <div class="col-md-4">
+												Zip Code
+												<p><input placeholder="Zip Code..."
+												   oninput="this.className = ''" name="pword"
+												   type="number"></p>
+											 </div>
+											  
+										   </div>
+										</div>
+									 </div>
+
+									 <div class="tab">
+										<strong>We are sorry We can't help your today</strong>
+										<br>
+										<small>We currently only serve customers in united States </small>
+									
+										<br>
+								   <label for="html" style="margin-left:2pc;">Yes, please notify me about new services</label>
+                                  
+										<input type="radio" class="form-check-input form-control " id="exampleCheck1" style="margin-top: -21px;">
+										 
+								     <label for="css" style="margin-left:2pc;">No thank You i dont want to be contacted</label>
+										
+								     <input type="radio" class="form-check-input form-control " id="exampleCheck1" style="margin-top: -21px;">
+									
+											
+										 </div>
+
+
+										 <div class="tab">
+											<strong>Next we need to get some information from your tax return</strong>
+											<br>
+											We need some basic information about how your taxes were filed and your tax debt.<br>
+											 Having a copy of your most recent tax return forms in front of you will make it a little easier.
+											  You may also want to bring out any letters or notices you have received from irs.<Br>
+												 If you can't find the documents, don't worry! We'll be sure you'll be fine anyway. Just try to remember how you or your accountant answered last time you did your taxes. 
+												
+											 </div>
+
+											 <div class="tab">
+												<strong>Right now, we only build payment plans for individuals so we have to check:</strong>
+												<br>
+												<small>Is the amount owed for a bussiness? </small>
+											
+												<br>
+										   <label for="html" style="margin-left:2pc;">Yes, it is for a business that is still opreation.</label>
+										  
+												<input type="radio" class="form-check-input form-control " id="exampleCheck1" style="margin-top: -21px;">
+												 
+										     <label for="css" style="margin-left:2pc;">Yes, but the business is no longer in opreation </label>
+												
+										     <input type="radio" class="form-check-input form-control " id="exampleCheck1" style="margin-top: -21px;">
+											
+										    
+										     <label for="css" style="margin-left:2pc;">No, the  entire $6743 is for my private teax </label>
+												
+										     <input type="radio" class="form-check-input form-control " id="exampleCheck1" style="margin-top: -21px;">
+												 </div>
+
+
+												 <div class="tab">
+													<strong>we r sorry we cannot help you today</strong>
+													<br>
+													<small>Is the amount owed for a bussiness? </small>
+												
+													<br>
+											   <label for="html" style="margin-left:2pc;">Yes, it is for a business that is still opreation.</label>
+											  
+													<input type="radio" class="form-check-input form-control " id="exampleCheck1" style="margin-top: -21px;">
+													 
+											     <label for="css" style="margin-left:2pc;">Yes, please notify my about service </label>
+													
+											     <input type="radio" class="form-check-input form-control " id="exampleCheck1" style="margin-top: -21px;">
+												
+											    
+											     <label for="css" style="margin-left:2pc;">No, thank you i dont want be contacted</label>
+													
+											     <input type="radio" class="form-check-input form-control " id="exampleCheck1" style="margin-top: -21px;">
+													 </div>
+											 
+
+
+                                    <div style="overflow:auto;">
+                                       <div style="float:right;">
+                                          <button type="button" id="prevBtn"
+                                             onclick="nextPrev(-1)">Previous</button>
+                                          <button type="button" id="nextBtn"
+                                             onclick="nextPrev(1)">Next</button>
+                                       </div>
+                                    </div>
+                                    <!-- Circles which indicates the steps of the form: -->
+                                    <div style="text-align:center;margin-top:40px;">
+                                       <span class="step"></span>
+                                       <span class="step"></span>
+                                       <span class="step"></span>
+                                       <span class="step"></span>
+                                       <span class="step"></span>
+                                       <span class="step"></span>
+                                       <span class="step"></span>
+                                       <span class="step"></span>
+                                       <span class="step"></span>
+
+
+
+
+                                    </div>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--// Tax Calculation Area Right -->
+               </div>
+      </div>
+      </section>
+      <!--// Tax Calculation Area -->
+      <!-- Service Area -->
+      <section id="service-area" class="service-area section-padding--xlg bg--white">
+      <div class="container">
+      <div class="row">
+      <div class="col-lg-8 col-md-10">
+      <div class="section-title">
+      <h4>Our Process</h4>
+      <h2>PROVIDE Efficient <span class="color--theme"> Process</span>
+      </h2>
+      <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+      totam rem aperiam, eaque ipsa quae </p>
+      </div>
+      </div>
+      </div>
+      <div class="row align-items-center">
+      <div class="col-lg-8">
+      <div class="service-area__services">
+      <div class="row">
+      <!-- Single Service -->
+      <div class="col-lg-6 col-md-6 wow flipInX">
+      <div class="service">
+      <div class="service__icon"> <img src="assets/images/icons/service-icon-user.jpg"
+         alt="service icon"> </div>
+      <div class="service__content">
+      <h5>
+      <a href="#">Qualify</a>
+      </h5>
+      <p> Quick, easy, and always 100% free to check on our website if you qualify.
+      </p>
+      </div>
+      </div>
+      </div>
+      <!--// Single Service -->
+      <!-- Single Service -->
+      <div class="col-lg-6 col-md-6 wow flipInX">
+      <div class="service">
+      <div class="service__icon"> <img src="assets/images/icons/service-icon-bar.jpg"
+         alt="service icon"> </div>
+      <div class="service__content">
+      <h5>
+      <a href="#">Analyze </a>
+      </h5>
+      <p>We ask you for the information we need to determine the best options. </p>
+      </div>
+      </div>
+      </div>
+      <!--// Single Service -->
+      <!-- Single Service -->
+      <div class="col-lg-6 col-md-6 wow flipInX">
+      <div class="service">
+      <div class="service__icon"> <img
+         src="assets/images/icons/service-icon-briefcase.jpg" alt="service icon">
+      </div>
+      <div class="service__content">
+      <h5>
+      <a href="#">Work </a>
+      </h5>
+      <p>We go to work now and complete your case within 24 hours. </p>
+      </div>
+      </div>
+      </div>
+      <!--// Single Service -->
+      <!-- Single Service -->
+      <div class="col-lg-6 col-md-6 wow flipInX">
+      <div class="service">
+      <div class="service__icon"> <img src="assets/images/icons/service-icon-pie.jpg"
+         alt="service icon"> </div>
+      <div class="service__content">
+      <h5>
+      <a href="#">Relief </a>
+      </h5>
+      <p>Experience tax relief! </p>
+      </div>
+      </div>
+      </div>
+      <!--// Single Service -->
+      </div>
+      </div>
+      </div>
+      <div class="col-lg-4">
+      <div class="service-area__bars text-center">
+      <div class="cr-bars justify-content-lg-end justify-content-center">
+      <div class="cr-bar" data-bar-percent="25" data-bar-title="2013"></div>
+      <div class="cr-bar" data-bar-percent="45" data-bar-title="2014"></div>
+      <div class="cr-bar" data-bar-percent="37" data-bar-title="2015"></div>
+      <div class="cr-bar" data-bar-percent="69" data-bar-title="2016"></div>
+      <div class="cr-bar" data-bar-percent="88" data-bar-title="2017"></div>
+      </div> <span class="cr-bars__name">Our progress</span>
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
+      <!--// Service Area -->
+      <div class="container">
+      <div class="row" style="padding-left: 0;">
+      <div class="col-md-7">
+      <div class="section-title">
+      <h4>Case Tracker</h4>
+      <h2>PROVIDE Efficient <span class="color--theme"> Case Tracker</span>
+      </h2>
+      <p>Watch our tax specialists complete your case in real time. </p><br><br>
+      </div>
+      <div class="card" style="width: auto !important;">
+      <div class="form">
+      <div class="left-side">
+      <div class="left-heading">
+      <h3>Case Tracker</h3>
+      </div>
+      <div class="steps-content">
+      <h3>Step <span class="step-number">1</span></h3>
+      <p class="step-number-content active">Enter your personal information to get closer to
+      companies.</p>
+      <p class="step-number-content d-none">Get to know better by adding your
+      diploma,certificate and education life.</p>
+      <p class="step-number-content d-none">Help companies get to know you better by telling
+      then about your past experiences.</p>
+      <p class="step-number-content d-none">Add your profile piccture and let companies find
+      youy fast.</p>
+      </div>
+      <ul class="progress-bar">
+      <li class="active">Order Confirmed</li>
+      <li>Work in Progress</li>
+      <li>Compiling Forms</li>
+      <li>Checking Final Work</li>
+      <li>Work Complete</li>
+      </ul>
+      </div>
+      <div class="right-side">
+      <div class="main active"> <small><i class="fa fa-smile-o"></i></small>
+      <div class="text">
+      <h2>Your Personal Information</h2>
+      <p>Enter your personal information to get closer to copanies.</p>
+      </div>
+      <div class="input-text">
+      <div class="input-div">
+      <input type="text" class="form-control" required require id="user_name">
+      <span>#Case</span> </div>
+      </div>
+      <div class="input-text">
+      <div class="input-div">
+      <input type="text" class="form-control" required require> <span>Phone
+      number</span> </div>
+      </div>
+      <div class="buttons">
+      <button class="next_button">Next Step</button>
+      </div>
+      </div>
+      <div class="main"> <small><i class="fa fa-smile-o"></i></small>
+      <div class="text">
+      <h2>Education</h2>
+      <p>Inform companies about your education life.</p>
+      </div>
+      <div class="input-text">
+      <div class="input-div">
+      <input type="text" class="form-control" required require> <span>School
+      Name</span> </div>
+      <div class="input-div">
+      <input type="text" class="form-control" required> <span>Board Name</span> </div>
+      </div>
+      <div class="input-text">
+      <div class="input-div">
+      <input type="text" class="form-control" required require>
+      <span>College/University name</span> </div>
+      </div>
+      <div class="buttons button_space">
+      <button class="back_button">Back</button>
+      <button class="next_button">Next Step</button>
+      </div>
+      </div>
+      <div class="main"> <small><i class="fa fa-smile-o"></i></small>
+      <div class="text">
+      <h2>Work Experiences</h2>
+      <p>Can you talk about your past work experience?</p>
+      </div>
+      <div class="input-text">
+      <div class="input-div">
+      <input type="text" class="form-control" required require> <span>Experience
+      1</span> </div>
+      <div class="input-div">
+      <input type="text" class="form-control" required require> <span>Position</span>
+      </div>
+      </div>
+      <div class="input-text">
+      <div class="input-div">
+      <input type="text" class="form-control" required> <span>Experience 2</span>
+      </div>
+      <div class="input-div">
+      <input type="text" class="form-control" required> <span>Position</span> </div>
+      </div>
+      <div class="input-text">
+      <div class="input-div">
+      <input type="text" class="form-control" required> <span>Experience 3</span>
+      </div>
+      <div class="input-div">
+      <input type="text" class="form-control" required> <span>Position</span> </div>
+      </div>
+      <div class="buttons button_space">
+      <button class="back_button">Back</button>
+      <button class="next_button" type="btn-lg">Next Step</button>
+      </div>
+      </div>
+      <div class="main"> <small><i class="fa fa-smile-o"></i></small>
+      <div class="text">
+      <h2>User Photo</h2>
+      <p>Upload your profile picture and share yourself.</p>
+      </div>
+      <div class="user_card"> <span></span>
+      <div class="circle"> <span><img src="https://i.imgur.com/hnwphgM.jpg"></span> </div>
+      <div class="social"> <span><i class="fa fa-share-alt"></i></span> <span><i
+         class="fa fa-heart"></i></span> </div>
+      <div class="user_name">
+      <h3>Peter Hawkins</h3>
+      <div class="detail">
+      <p><a href="#">Izmar,Turkey</a>Hiring</p>
+      <p>17 last day . 94Apply</p>
+      </div>
+      </div>
+      </div>
+      <div class="buttons button_space">
+      <button class="back_button">Back</button>
+      <button class="submit_button">Submit</button>
+      </div>
+      </div>
+      <div class="main">
+      <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+      <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+      <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+      </svg>
+      <div class="text congrats">
+      <h2>Congratulations!</h2>
+      <p>Thanks Mr./Mrs. <span class="shown_name"></span> your information have been
+      submitted successfully for the future reference we will contact you soon.</p>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="col-md-5 hide" style="margin-top: 11pc;">
+      <img src="assets/images/service/service-bottom-thumb.jpg">
+      </div>
+      </div>
+      </div>
+      <!-- Testimonial Area -->
+      <div id="testimonial-area" class="testimonial-area section-padding--xlg bg--white">
+      <div class="container">
+      <div class="row">
+      <div class="col-lg-4">
+      <div class="section-title no-padding">
+      <h2>WHAT
+      <span class="color--theme">CLIENTS SAY</span>
+      </h2>
+      <p>perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudanti,
+      totam rem aperiam, eaque ipsa quae so something new for tax calculation </p>
+      </div>
+      </div>
+      <div class="col-lg-8">
+      <div class="testimonial testimonial-slider-style3-active testimonial--style3">
+      <!-- Testimonial Single -->
+      <div class="testimonial__single">
+      <!-- Testimonial Content Single -->
+      <div class="testimonial__content__single">
+      <p>parchitecto beatae vitae dicta sunt abo no enim ipsam voluptatem quia voluptas sit
+      rnatur aut odit aut fugit, sed quia </p>
+      </div>
+      <!--// Testimonial Content Single -->
+      <!-- Single Author -->
+      <div class="testimonial__author__single">
+      <div class="testimonial__author__image"> <img
+         src="assets/images/testimonial/testimonial-author-3.jpg"
+         alt="testimonial author"> </div>
+      <div class="testimonial__author__description">
+      <h6>SHON SMITH</h6> <span>President</span>
+      </div>
+      </div>
+      <!--// Single Author -->
+      </div>
+      <!--// Testimonial Single -->
+      <!-- Testimonial Single -->
+      <div class="testimonial__single">
+      <!-- Testimonial Content Single -->
+      <div class="testimonial__content__single">
+      <p>parchitecto beatae vitae dicta sunt abo no enim ipsam voluptatem quia voluptas sit
+      rnatur aut odit aut fugit, sed quia </p>
+      </div>
+      <!--// Testimonial Content Single -->
+      <!-- Single Author -->
+      <div class="testimonial__author__single">
+      <div class="testimonial__author__image"> <img
+         src="assets/images/testimonial/testimonial-author-2.jpg"
+         alt="testimonial author"> </div>
+      <div class="testimonial__author__description">
+      <h6>RAISA MARIYA</h6> <span>Ceo</span>
+      </div>
+      </div>
+      <!--// Single Author -->
+      </div>
+      <!--// Testimonial Single -->
+      <!-- Testimonial Single -->
+      <div class="testimonial__single">
+      <!-- Testimonial Content Single -->
+      <div class="testimonial__content__single">
+      <p>parchitecto beatae vitae dicta sunt abo no enim ipsam voluptatem quia voluptas sit
+      rnatur aut odit aut fugit, sed quia </p>
+      </div>
+      <!--// Testimonial Content Single -->
+      <!-- Single Author -->
+      <div class="testimonial__author__single">
+      <div class="testimonial__author__image"> <img
+         src="assets/images/testimonial/testimonial-author-1.jpg"
+         alt="testimonial author"> </div>
+      <div class="testimonial__author__description">
+      <h6>John Patrik</h6> <span>Executive</span>
+      </div>
+      </div>
+      <!--// Single Author -->
+      </div>
+      <!--// Testimonial Single -->
+      <!-- Testimonial Single -->
+      <div class="testimonial__single">
+      <!-- Testimonial Content Single -->
+      <div class="testimonial__content__single">
+      <p>parchitecto beatae vitae dicta sunt abo no enim ipsam voluptatem quia voluptas sit
+      rnatur aut odit aut fugit, sed quia </p>
+      </div>
+      <!--// Testimonial Content Single -->
+      <!-- Single Author -->
+      <div class="testimonial__author__single">
+      <div class="testimonial__author__image"> <img
+         src="assets/images/testimonial/testimonial-author-3.jpg"
+         alt="testimonial author"> </div>
+      <div class="testimonial__author__description">
+      <h6>SHON SMITH</h6> <span>President</span>
+      </div>
+      </div>
+      <!--// Single Author -->
+      </div>
+      <!--// Testimonial Single -->
+      <!-- Testimonial Single -->
+      <div class="testimonial__single">
+      <!-- Testimonial Content Single -->
+      <div class="testimonial__content__single">
+      <p>parchitecto beatae vitae dicta sunt abo no enim ipsam voluptatem quia voluptas sit
+      rnatur aut odit aut fugit, sed quia </p>
+      </div>
+      <!--// Testimonial Content Single -->
+      <!-- Single Author -->
+      <div class="testimonial__author__single">
+      <div class="testimonial__author__image"> <img
+         src="assets/images/testimonial/testimonial-author-2.jpg"
+         alt="testimonial author"> </div>
+      <div class="testimonial__author__description">
+      <h6>RAISA MARIYA</h6> <span>Ceo</span>
+      </div>
+      </div>
+      <!--// Single Author -->
+      </div>
+      <!--// Testimonial Single -->
+      <!-- Testimonial Single -->
+      <div class="testimonial__single">
+      <!-- Testimonial Content Single -->
+      <div class="testimonial__content__single">
+      <p>parchitecto beatae vitae dicta sunt abo no enim ipsam voluptatem quia voluptas sit
+      rnatur aut odit aut fugit, sed quia </p>
+      </div>
+      <!--// Testimonial Content Single -->
+      <!-- Single Author -->
+      <div class="testimonial__author__single">
+      <div class="testimonial__author__image"> <img
+         src="assets/images/testimonial/testimonial-author-1.jpg"
+         alt="testimonial author"> </div>
+      <div class="testimonial__author__description">
+      <h6>John Patrik</h6> <span>Executive</span>
+      </div>
+      </div>
+      <!--// Single Author -->
+      </div>
+      <!--// Testimonial Single -->
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      <!--// Testimonial Area -->
+      <br>
+      <br>
+      <br>
+      <div class="container">
+      <div class="row">
+      <div class="section-title text-center">
+      <!-- <h4>OUR BLOG</h4> -->
+      <h2>Knowledge
+      <span class="color--theme"> FAQ</span>
+      </h2>
+      <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+      aperiam, eaque ipsa quae </p>
+      <br>
+      <br>
+      </div>
+      <div class="col-md-6"> <img src="assets/images/services/service-thumb-6.jpg" class="img-fluid"> </div>
+      <div class="col-md-6">
+      <ul class="faq">
+      <li class="q"><i class="ion-chevron-right" style="margin-right: 1em;"></i>What does the term
+      "Full-Tang" mean?</li>
+      <li class="a">"Full-Tang" refers to knives where the blade goes all the way down through the handle
+      to the end of the grip.</li>
+      <li class="q"><i class="ion-chevron-right" style="margin-right: 1em;"></i>What is a bolster, and
+      what benefits does it provide?</li>
+      <li class="a">A knife bolster is the thick section between the handle and the blade, and it
+      strengthens the knife, and gives better balance and control. However, there is much disagreement
+      on whether or not it is necessary.</li>
+      <li class="q"><i class="ion-chevron-right" style="margin-right: 1em;"></i>What are the differences
+      between forged </li>
+      <li class="a">Forged knives are stronger and retain their edge longer than stamped knives, which
+      have more flexible blades. In the case of Wusthof, their forged knives go through 40 different
+      steps in their factory, where the laser-cut knives go through 14 steps. Also, their forged
+      knives include a bolster, which balances the knife and protects fingers, although bolsters can
+      also be added to laser-cut knives. Laser-cut stamped knives can be of excellent quality too,
+      however, and they are more economically priced.</li>
+      <li class="q"><i class="ion-chevron-right" style="margin-right: 1em;"></i>How should I wash my
+      knives?</li>
+      <li class="a">Always wash them by hand with hot, soapy water. Never drop them in with a sinkful of
+      dirty dishes, or run them through a dishwasher, which will not only bang them together, but
+      damage the blade through excessive heating.</li>
+      <li class="q"><i class="ion-chevron-right" style="margin-right: 1em;"></i>Do I need to spend a lot
+      of money for knives?</li>
+      <li class="a">The more you can spend, the better, but there are some less expensive options, such as
+      Victorinox, which also make Swiss Army Knives. The blades are very sharp, and well-made for the
+      price.</li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <!-- Call To Action Area -->
+      <section id="cta-area" class="cta-area section-padding--sm bg--grey--light bg--abstruct-mask">
+      <div class="container">
+      <div class="row justify-content-center">
+      <div class="col-lg-10">
+      <div class="calltoaction text-center">
+      <h3>NEED ANY HELP AT
+      <span class="color--theme"> YOUR TAX SOLUTION?</span>
+      </h3>
+      <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+      totam rem aperiam, eaque ipsa Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+      amet, consectetur, adipisci </p>
+      <h6>JUST DAIL
+      <a href="callto://+00812548359874">+008 12548 359 874</a> (TOLL FREE)
+      </h6>
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
+      <!--// Call To Action Area -->
+      <!-- <section id="service-area" class="service-area section-padding--xlg bg--white"> -->
+      </main>
+      <!-- //Page Conent -->
+      <!-- Footer Area -->
+      <footer id="footer" class="footer-area fixed--footer">
+         <!-- Footer Widgets Area -->
+         <div class="footer-area__widgets section-padding--md bg--dark--light">
+            <div class="container">
+               <div class="footer-area__logo text-center">
+                  <a href="index.html"> <img src="https://dukanlay.com/Content/Logo/Dukanlay.jpg" alt="footer logo">
+                  </a>
+               </div>
+               <div class="widget-area footer--widgets">
+                  <!-- Single Widget -->
+                  <section class="widget widget-about">
+                     <h5 class="widget-title">ABOUT Tax</h5>
+                     <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium oloremque laudantium,
+                        totam rem onsectetur sires to obtain pain of itself because 
+                     </p>
+                     <div class="social-icons social-icons--rounded">
+                        <ul>
+                           <li class="facebook">
+                              <a href="https://www.facebook.com/"> <i class="fa fa-facebook"></i> </a>
+                           </li>
+                           <li class="twitter">
+                              <a href="https://twitter.com/"> <i class="fa fa-twitter"></i> </a>
+                           </li>
+                           <li class="instagram">
+                              <a href="https://www.instagram.com/"> <i class="fa fa-instagram"></i> </a>
+                           </li>
+                           <li class="google-plus">
+                              <a href="https://plus.google.com/discover"> <i class="fa fa-google-plus"></i> </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </section>
+                  <!--// Single Widget -->
+                  <!-- Single Widget -->
+                  <section class="widget widget-quick-links">
+                     <h5 class="widget-title">QUICK LINKS</h5>
+                     <ul>
+                        <li> <a href="payment-plan.html"> Services</a> </li>
+                        <li> <a href="about-us.html">About Us</a> </li>
+                        <li> <a href="#">Help Centre</a> </li>
+                        <li> <a href="contact.html">Contact Us</a> </li>
+                     </ul>
+                  </section>
+                  <!--// Single Widget -->
+                  <!-- Single Widget -->
+                  <section class="widget widget-twitter-feed">
+                     <h5 class="widget-title">Twitter Feed</h5>
+                     <ul>
+                        <li>
+                           <p> <a href="#">@Alex Smith</a>, unde omnis te us error sit voluptatem </p>
+                           <span
+                              class="time">
+                           <a href="#">10 Mins ago</a>
+                           </span>
+                        </li>
+                        <li>
+                           <p> <a href="#">@Justin Bieber</a>, unde omnis te us error sit voluptatem </p>
+                           <span
+                              class="time">
+                           <a href="#">12 Mins ago</a>
+                           </span>
+                        </li>
+                     </ul>
+                  </section>
+                  <!--// Single Widget -->
+                  <!-- Single Widget -->
+                  <section class="widget widget-contact-info">
+                     <h5 class="widget-title">Contact Info</h5>
+                     <ul>
+                        <li>
+                           <p>256 Notrh Tower, Western City Mid Town, Las Vagas, USA</p>
+                        </li>
+                        <li>
+                           <p> <a href="callto://+00812568987789">+008 12568 987 789</a> </p>
+                           <p> <a href="callto://+00835687567458">+008 35687 567 458</a> </p>
+                        </li>
+                        <li>
+                           <p> <a href="#">info@abcc.com</a> </p>
+                           <p> <a href="#">www.dukanlay.com/</a> </p>
+                        </li>
+                     </ul>
+                  </section>
+                  <!--// Single Widget -->
+               </div>
+            </div>
+         </div>
+         <!--// Footer Widgets Area -->
+         <!-- Footer Copyright Area -->
+         <div class="footer-area__copyright bg--dark">
+            <div class="container">
+               <div class="copyright text-center">
+                  <p>&copy; 2022 <span> Tax </span> Made with <i class="fa fa-heart"></i> by <a
+                     href="https://dukanlay.com/">Dukanlay</a></p>
+               </div>
+            </div>
+         </div>
+         <!--// Footer Copyright Area -->
+      </footer>
+      <!-- //Footer Area -->
+      </div>
+      <!-- //Main wrapper -->
+      <!-- Back To Top Start -->
+      <button id="backBTn" class="backbtn"><i class="fa fa-angle-up"></i></button>
+      <!-- //Back To Top end -->
+      <!-- JS
+         ============================================ -->
+      <!-- Modernizer & jQuery JS -->
+      <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+      <script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
+      <!-- Bootstrap JS -->
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <!-- Plugins JS -->
+      <script src="assets/js/plugins.js"></script>
+      <script src="assets/js/ajax-mail.js"></script>
+      <script src="assets/js/active.js"></script>
+      <!-- Main JS -->
+      <script src="assets/js/scripts.js"></script>
+      <script>
+         // Accordian
+         var action = "click";
+         var speed = "500";
+         $(document).ready(function () {
+         	// Question handler
+         	$('li.q').on(action, function () {
+         		// Get next element
+         		$(this).next().slideToggle(speed)
+         			// Select all other answers
+         			.siblings('li.a').slideUp();
+         	});
+         });
+      </script>
+      <script>
+         var next_click = document.querySelectorAll(".next_button");
+         var main_form = document.querySelectorAll(".main");
+         var step_list = document.querySelectorAll(".progress-bar li");
+         var num = document.querySelector(".step-number");
+         let formnumber = 0;
+         next_click.forEach(function (next_click_form) {
+         	next_click_form.addEventListener('click', function () {
+         		if (!validateform()) {
+         			return false
+         		}
+         		formnumber++;
+         		updateform();
+         		progress_forward();
+         		contentchange();
+         	});
+         });
+         var back_click = document.querySelectorAll(".back_button");
+         back_click.forEach(function (back_click_form) {
+         	back_click_form.addEventListener('click', function () {
+         		formnumber--;
+         		updateform();
+         		progress_backward();
+         		contentchange();
+         	});
+         });
+         var username = document.querySelector("#user_name");
+         var shownname = document.querySelector(".shown_name");
+         var submit_click = document.querySelectorAll(".submit_button");
+         submit_click.forEach(function (submit_click_form) {
+         	submit_click_form.addEventListener('click', function () {
+         		shownname.innerHTML = username.value;
+         		formnumber++;
+         		updateform();
+         	});
+         });
+         var heart = document.querySelector(".fa-heart");
+         heart.addEventListener('click', function () {
+         	heart.classList.toggle('heart');
+         });
+         var share = document.querySelector(".fa-share-alt");
+         share.addEventListener('click', function () {
+         	share.classList.toggle('share');
+         });
+         
+         function updateform() {
+         	main_form.forEach(function (mainform_number) {
+         		mainform_number.classList.remove('active');
+         	})
+         	main_form[formnumber].classList.add('active');
+         }
+         
+         function progress_forward() {
+         	// step_list.forEach(list => {
+         	//     list.classList.remove('active');
+         	// }); 
+         	num.innerHTML = formnumber + 1;
+         	step_list[formnumber].classList.add('active');
+         }
+         
+         function progress_backward() {
+         	var form_num = formnumber + 1;
+         	step_list[form_num].classList.remove('active');
+         	num.innerHTML = form_num;
+         }
+         var step_num_content = document.querySelectorAll(".step-number-content");
+         
+         function contentchange() {
+         	step_num_content.forEach(function (content) {
+         		content.classList.remove('active');
+         		content.classList.add('d-none');
+         	});
+         	step_num_content[formnumber].classList.add('active');
+         }
+         
+         function validateform() {
+         	validate = true;
+         	var validate_inputs = document.querySelectorAll(".main.active input");
+         	validate_inputs.forEach(function (vaildate_input) {
+         		vaildate_input.classList.remove('warning');
+         		if (vaildate_input.hasAttribute('require')) {
+         			if (vaildate_input.value.length == 0) {
+         				validate = false;
+         				vaildate_input.classList.add('warning');
+         			}
+         		}
+         	});
+         	return validate;
+         }
+      </script>
+      <script></script>
+      <script>
+         var currentTab = 0; // Current tab is set to be the first tab (0)
+         showTab(currentTab); // Display the current tab
+         
+         function showTab(n) {
+         	// This function will display the specified tab of the form...
+         	var x = document.getElementsByClassName("tab");
+         	x[n].style.display = "block";
+         	//... and fix the Previous/Next buttons:
+         	if (n == 0) {
+         		document.getElementById("prevBtn").style.display = "none";
+         	} else {
+         		document.getElementById("prevBtn").style.display = "inline";
+         	}
+         	if (n == (x.length - 1)) {
+         		document.getElementById("nextBtn").innerHTML = "Submit";
+         	} else {
+         		document.getElementById("nextBtn").innerHTML = "Next";
+         	}
+         	//... and run a function that will display the correct step indicator:
+         	fixStepIndicator(n)
+         }
+         
+         function nextPrev(n) {
+         	// This function will figure out which tab to display
+         	var x = document.getElementsByClassName("tab");
+         	// Exit the function if any field in the current tab is invalid:
+         	if (n == 1 && !validateForm()) return false;
+         	// Hide the current tab:
+         	x[currentTab].style.display = "none";
+         	// Increase or decrease the current tab by 1:
+         	currentTab = currentTab + n;
+         	// if you have reached the end of the form...
+         	if (currentTab >= x.length) {
+         		// ... the form gets submitted:
+         		document.getElementById("regForm").submit();
+         		return false;
+         	}
+         	// Otherwise, display the correct tab:
+         	showTab(currentTab);
+         }
+         
+         function validateForm() {
+         	// This function deals with validation of the form fields
+         	var x, y, i, valid = true;
+         	x = document.getElementsByClassName("tab");
+         	y = x[currentTab].getElementsByTagName("input");
+         	// A loop that checks every input field in the current tab:
+         	for (i = 0; i < y.length; i++) {
+         		// If a field is empty...
+         		if (y[i].value == "") {
+         			// add an "invalid" class to the field:
+         			y[i].className += " invalid";
+         			// and set the current valid status to false
+         			valid = false;
+         		}
+         	}
+         	// If the valid status is true, mark the step as finished and valid:
+         	if (valid) {
+         		document.getElementsByClassName("step")[currentTab].className += " finish";
+         	}
+         	return valid; // return the valid status
+         }
+         
+         function fixStepIndicator(n) {
+         	// This function removes the "active" class of all steps...
+         	var i, x = document.getElementsByClassName("step");
+         	for (i = 0; i < x.length; i++) {
+         		x[i].className = x[i].className.replace(" active", "");
+         	}
+         	//... and adds the "active" class on the current step:
+         	x[n].className += " active";
+         }
+      </script>
+      <script>
+         const progress = document.querySelector('.progress');
+         
+         progress.addEventListener('input', function () {
+         	const value = this.value;
+         	this.style.background =
+         		`linear-gradient(to right, #00AC1F 0%, #00AC1F ${value}%, #fff ${value}%, white 100%)`
+         })
+      </script>
+   </body>
+</html>
